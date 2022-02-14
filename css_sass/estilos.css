@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* importando icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+/* SECCION FOOTER */
+.footer {
+  padding-top: 1rem;
+  background-color: black;
+}
+
+.footer-sm {
+  background-color: #212121;
+  color: white;
+}
+
+.footer-sm a {
+  color: white;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+
+.footer-sm a:hover {
+  background-color: #d139f3;
+  color: black;
+}
+
+.footer-sm a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.footer-bottom {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-up {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+}
+
+.footer-copy {
+  text-align: center;
+  color: gray;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-copy a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-copy a:hover {
+  color: #72c755;
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* header del index */
+header {
+  background-color: #e7f045;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 6;
+  margin-top: -7%;
+}
+
+.carousel-inner {
+  margin-top: 6.5%;
+}
+
+.botonera {
+  margin-right: 20px;
+}
+
+.botonera ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.botonera ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #141514;
+}
+
+.logo {
+  margin-left: 12px;
+  width: 17%;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+h1 {
+  display: inline-block;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 50px;
+  margin-left: -12rem;
+  margin-right: 10rem;
+}
+
+.btnInicio {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+a:hover, a:focus {
+  background-size: 100% 2px;
+}
+
+h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#f32170), color-stop(#ffeb07), color-stop(#2196f3), to(#ff00eb));
+  background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb);
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 20%;
+}
+
+h3 {
+  background: -webkit-gradient(linear, left top, right top, from(#f32170), color-stop(#ffeb07), color-stop(#2196f3), to(#ff00eb));
+  background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb);
+  font-size: 4rem;
+  font-family: sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 20%;
+}
+.gridPadre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 0.2em;
+  grid-row-gap: 0.2em;
+  grid-template-areas:
+    "imagenUno imagenDos imagenTres"
+    "imagenCuatro imagenCinco imagenSeis";
+}
+
+.imagenUno {
+  grid-area: imagenUno;
+}
+
+.imagenDos {
+  grid-area: imagenDos;
+}
+
+.imagenTres {
+  grid-area: imagenTres;
+}
+
+.imagenCuatro {
+  grid-area: imagenCuatro;
+}
+
+.imagenCinco {
+  grid-area: imagenCinco;
+}
+
+.imagenSeis {
+  grid-area: imagenSeis;
+}
+.imagenSiete {
+  grid-area: imagenSiete;
+}
+
+
+
+.botonWhatsApp img {
+  width: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+/*# sourceMappingURL=estilos.css.map */

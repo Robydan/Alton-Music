@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alton Music</title>
+  <!-- Agregando BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css_sass/estilos.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- EL HEADER LO VAMOS A MAQUETAR CON FLEXBOX -->
+  <header>
+    <div>
+      <a href="./index.html"><img class="logo" src="./multimedia/alton-removeb.png" alt="Logo de alton" /></a>
+    </div>
+    <h1>Alton Music</h1>
+    <nav class="botonera">
+      <ul>
+        <li><a class="btnInicio" href="./alton_music/contacto.html">Contacto</a></li>
+        <li><a class="btnInicio" href="./alton_music/ofertas.html">Ofertas</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+
+    <!-- BOOSTRAP CAROUSEL -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img  src="./multimedia/carru-1280.jpg" class="img-fluid rounded mx-auto d-block w-50 h-80" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./multimedia/carru-1280-2.jpg" class="img-fluid rounded mx-auto d-block w-50 h-80" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./multimedia/carru-1280-3.jpg" class="img-fluid rounded mx-auto d-block w-50 h-80 " alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="contenedor">
+    <h2>Nosotros</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+      nulla qui, animi deserunt obcaecati voluptates placeat! Provident
+      itaque, assumenda nulla aliquid placeat sapiente ullam recusandae
+      minima autem culpa porro dolore ducimus eaque sed quibusdam cum
+      voluptates ab eos quisquam dignissimos asperiores consectetur sunt
+      doloribus magni. Non, mollitia inventore? Asperiores similique, modi
+      atque minima nostrum veritatis aperiam qui ex mollitia, molestias
+      quaerat iusto cupiditate. Tempora earum quasi consequuntur
+      reprehenderit voluptatum omnis adipisci aspernatur magnam. Assumenda
+      sunt quidem fugit commodi doloremque perspiciatis dolor facere cum
+      repellat a, id recusandae doloribus nemo illo numquam soluta quos, non
+      explicabo voluptatibus eum rerum inventore quasi!
+    </p>
+  </div>
+  </section>
+
+  <!-- SECCION GALERÍA DE IMÁGENES -->
+
+  <section id="galeria">
+    <div class="contenedor">
+      <h3>Todo lo buscas esta aca</h3>
+      <p>Amplificadores, Baterias, Pedaleras, Teclados, Electronica, audio y video</p>
+
+      <div class="gridPadre">
+        <img class="imagenGaleria imagenUno" src="./multimedia/aplificadores.jpg" alt="amplificadores" />
+        <img class="imagenGaleria imagenDos" src="./multimedia/electronica.jpg" alt="electronica" />
+        <img class="imagenGaleria imagenTres" src="./multimedia/bateria-y-percucion.jpg" alt="bateria-y-percucion" />
+        <img class="imagenGaleria imagenCuatro" src="./multimedia/guitarra.jpg" alt="guitarra" />
+        <img class="imagenGaleria imagenCinco" src="./multimedia/pedaleras.jpg" alt="pedaleras" />
+        <img class="imagenGaleria imagenSeis" src="./multimedia/teclados.jpg" alt="teclados" />
+
+      </div>
+    </div>
+  </section>
+  <!-- BOTON DE WHATSAPP -->
+  <div class="botonWhatsApp">
+    <img src="./multimedia/whatsapp.png" alt="" />
+  </div>
+
+  <!-- SECCIÓN FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-sm">
+      <div class="container">
+        <div class="row footer-up">
+          <div class="col">Buscanos en las redes</div>
+          <div class="col">
+            <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row footer-copy">
+              <div class="col">
+                &copy; Copyright 2021 <a href="#">AltonMusic</a> | Creada por <a href="#">REM</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+  <!-- iconos font awason -->
+  <script src="https://kit.fontawesome.com/a4397840eb.js" crossorigin="anonymous"></script>
+
+  <!-- Libreria popperJS x CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+  <!-- JS con instalacion -->
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
