@@ -171,4 +171,13 @@ h3 {
   bottom: 10px;
   right: 10px;
 }
+
+/* banner de ofertas */
+.imagenEncabezadoOferta {
+  width: 70%;
+  margin-top: 6rem;
+  -webkit-margin-end: 0rem;
+          margin-inline-end: 0rem;
+  margin-left: 11%;
+}
 /*# sourceMappingURL=estilos.css.map */
