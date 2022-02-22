@@ -75,12 +75,14 @@ h3 {
   text-transform: uppercase;
   /* inline-block afecta solo al titulo */
   display: inline-block;
+  margin-right: 16%;
+  margin-top: 0.4%;
 }
 
 /* SECCION SERVICIOS */
 .contenedor {
   text-align: center;
-  margin: 5px;
+  margin: 10px;
   padding: 1em;
   border: solid 1px #99a799;
   border-radius: 4px;
@@ -502,6 +504,10 @@ textarea {
     margin-left: -6rem;
     margin-right: 5rem;
   }
+h3{
+  font-size: 20px;
+}
+
   /* MEDIA DE CONTACTO max 599 */
   .formulario {
     width: 100%;
@@ -567,6 +573,9 @@ textarea {
       font-size: 35px;
       margin-left: 2rem;
       margin-right: 5rem;
+    }
+    h3{
+      font-size: 20px;
     }
     /* MEDIA DE CONTACTO */
     .formulario {
