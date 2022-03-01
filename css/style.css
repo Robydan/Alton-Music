@@ -397,13 +397,15 @@ textarea {
 }
 
 .footer-sm a:hover {
-  background-color: #d139f3;
-  color: black;
+  background-color: #f5f842;
+  color: rgb(78, 87, 78);
+  
 }
 
 .footer-sm a i {
   font-size: 1rem;
-  margin-left: 1rem;
+  margin: 0.4rem;
+  font-size: 2rem;
 }
 
 .footer-bottom {
@@ -416,12 +418,14 @@ textarea {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 .footer-copy {
   text-align: center;
   color: gray;
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .footer-copy a {
@@ -437,6 +441,13 @@ textarea {
 .footer-copy {
   display: flex;
   justify-content: center;
+}
+p{
+  font-size: 1.5rem;
+  color: #72c755;
+}
+.col3{
+  flex: 1 0 0%;
 }
 
 /* BOTON DE WHATSAPP */

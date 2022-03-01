@@ -1,58 +1,70 @@
 /* SECCION FOOTER */
 
-
-// .footer {
-//     padding-top: 1rem;
-//     background-color: black;
-//   }
+.footer {
+    padding-top: 1rem;
+    background-color: black;
+  }
   
-//   .footer-sm {
-//     background-color: #212121;
-//     color: white;
+  .footer-sm {
+    background-color: #212121;
+    color: white;
+  }
   
-//     a {
-//       color: white;
-//       transition: height 2s;
+  .footer-sm a {
+    color: white;
+    transition: height 2s;
+  }
   
-//       &:hover {
-//         background-color: #d139f3;
-//         color: black;
-//       }
+  .footer-sm a:hover {
+    background-color: #d139f3;
+    color: black;
+  }
   
-//       i {
-//         font-size: 1rem;
-//         margin-left: 1rem;
-//       }
-//     }
-//   }
+  .footer-sm a i {
+    font-size: 1rem;
+    margin: 0.4rem;
+    font-size: 2rem;
+  }
   
-//   .footer-bottom {
-//     padding-top: 1.5rem;
-//     padding-bottom: 1.5rem;
-//   }
+  .footer-bottom {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   
-//   .footer-up {
-//     text-align: center;
-//     padding-top: 1.5rem;
-//     padding-bottom: 1.5rem;
-//     margin: 0 auto;
-//   }
+  .footer-up {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
   
-//   .footer-copy {
-//     text-align: center;
-//     color: gray;
-//     font-weight: 400;
+  .footer-copy {
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+  }
   
-//     a {
-//       color: gray;
-//       text-decoration: none;
+  .footer-copy a {
+    color: gray;
+    text-decoration: none;
+  }
   
-//       &:hover {
-//         color: #72c755;
-//         text-decoration: underline;
-//       }
-//     }
+  .footer-copy a:hover {
+    color: #72c755;
+    text-decoration: underline;
+  }
   
-//     display: flex;
-//     justify-content: center;
-//   }
+  .footer-copy {
+    display: flex;
+    justify-content: center;
+  }
+  .col3{
+      flex: 1 0 0%;
+  }
+  p{
+      font-size: 0.5rem;
+      color: #72c755;
+  }
