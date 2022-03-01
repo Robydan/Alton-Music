@@ -270,6 +270,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 }
+
 /* ANIMACION EN CONTACTOs */
 .burbuja {
   border-radius: 50%;
@@ -376,7 +377,7 @@ textarea {
   100%{
     transform: translateY(0);
   }
-  
+
 }
 
 /* SECCION FOOTER */
@@ -399,7 +400,7 @@ textarea {
 .footer-sm a:hover {
   background-color: #f5f842;
   color: rgb(78, 87, 78);
-  
+
 }
 
 .footer-sm a i {
@@ -442,13 +443,19 @@ textarea {
   display: flex;
   justify-content: center;
 }
-p{
+.ventas{
   font-size: 1.5rem;
   color: #72c755;
 }
 .col3{
   flex: 1 0 0%;
 }
+/* MAPA EN EL FOOTER */
+.ubicacion{
+text-align: center;
+
+}
+/* fin del footer */
 
 /* BOTON DE WHATSAPP */
 
