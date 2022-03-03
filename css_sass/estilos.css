@@ -191,19 +191,16 @@ body {
 }
 
 /* header del index */
-header {
+header{
   background-color: #e7f045;
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
+     
           justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+              align-items: center;
   position: fixed;
   z-index: 6;
   margin-top: -7%;
