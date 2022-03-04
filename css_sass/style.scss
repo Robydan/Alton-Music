@@ -6,6 +6,7 @@
 @import "contacto";
 @import "ofertas";
 
+
 /* VARIABLES */
 $colorheader: #e7f045;
 
@@ -13,11 +14,11 @@ $colorheader: #e7f045;
     margin: 0;
     padding: 0;
  }
-  
+
   body {
     font-family: "Roboto", sans-serif;
   }
-  
+
   header {
     background-color: $colorheader;
     width: 100%;
@@ -31,19 +32,19 @@ $colorheader: #e7f045;
   .botonera {
     margin-right: 20px;
   }
-  
+
   .botonera ul li {
     display: inline-block;
     margin-left: 20px;
   }
-  
+
   .botonera ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     color: #141514;
   }
-  
+
   .logo {
     margin-left: 12px;
     width: 17%;
@@ -59,7 +60,8 @@ $colorheader: #e7f045;
     margin-left: -12rem;
     margin-right: 10rem;
   }
-  
+
+
   .btnInicio {
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
@@ -68,7 +70,7 @@ $colorheader: #e7f045;
     background-size: 0% 2px;
     transition: background-size 0.3s;
   }
-  
+
   a:hover,
   a:focus {
     background-size: 100% 2px;
@@ -84,7 +86,7 @@ $colorheader: #e7f045;
     margin-right: 16%;
     margin-top: 0.4%;
   }
-  
+
   /* SECCION SERVICIOS */
   .contenedor {
     text-align: center;
@@ -93,12 +95,12 @@ $colorheader: #e7f045;
     border: solid 1px #99a799;
     border-radius: 4px;
   }
-  
+
   .contenedor h2 {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  
+
   .contenedor p {
     font-size: 20px;
     margin-bottom: 15px;
@@ -115,24 +117,68 @@ $colorheader: #e7f045;
     width: 100%;
     margin-top: 6rem;
   }
+  /* BARRA DE NAVECION DE OFERTAS*/
+  .navOfertas{
+    background-color: #0769e9;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #034574;
+    transition: 0.5s;
+  }
+  
+
+
+
   /* CARRUSEL DE IMAGENES */
   .img-fluid{
     margin-top: 6.5rem;
 
   }
-  
+
   /*SECCION GALERIA */
-  
+
   .imagenGaleria {
     width: 100%;
     height: 300px;
   }
-  
+
   .imagenGaleria:hover {
     filter: grayscale(100%);
     z-index: 5;
   }
-  
+
   .gridPadre {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -143,27 +189,27 @@ $colorheader: #e7f045;
       "imagenUno imagenDos imagenTres"
       "imagenCuatro imagenCinco imagenSeis";
   }
-  
+
   .imagenUno {
     grid-area: imagenUno;
   }
-  
+
   .imagenDos {
     grid-area: imagenDos;
   }
-  
+
   .imagenTres {
     grid-area: imagenTres;
   }
-  
+
   .imagenCuatro {
     grid-area: imagenCuatro;
   }
-  
+
   .imagenCinco {
     grid-area: imagenCinco;
   }
-  
+
   .imagenSeis {
     grid-area: imagenSeis;
   }
@@ -176,7 +222,7 @@ $colorheader: #e7f045;
     width: 700px;
     margin: 5px auto 9px;
   }
-  
+
   .NavOfertas ul li {
     display: inline-block;
     position: relative;
@@ -194,10 +240,10 @@ $colorheader: #e7f045;
     text-decoration: underline;
     transition: all 0.3s;
   }
-  
+
   /* GALERIA DE OFERTAS */
-  
-  
+
+
   .tarjetaflex {
     display: flex;
     padding: 5px 5px;
@@ -212,7 +258,7 @@ $colorheader: #e7f045;
   .imagenesDeOfertas{
     width: 100%;
   }
-  
+
   .imagenEncabezadoOferta{
     animation: movimiento 2.5s linear infinite;
   }
@@ -226,20 +272,20 @@ $colorheader: #e7f045;
   .imagenesDeOfertas img:hover {
     filter: brightness(0.6);
   }
-  
-  
-  
+
+
+
   /* BOTON DE WHATSAPP */
-  
+
   .botonWhatsApp img {
     width: 70px;
     position: fixed;
     bottom: 10px;
     right: 10px;
   }
-  
+
   /*VISTA MOVIL */
-  
+
   @media only screen and (min-width: 320px) and (max-width: 600px) {
     .gridPadre {
       display: grid;
@@ -253,36 +299,36 @@ $colorheader: #e7f045;
         "imagenCinco"
         "imagenSeis";
     }
-  
+
     .imagenUno {
       grid-area: imagenUno;
     }
-  
+
     .imagenDos {
       grid-area: imagenDos;
     }
-  
+
     .imagenTres {
       grid-area: imagenTres;
     }
-  
+
     .imagenCuatro {
       grid-area: imagenCuatro;
     }
-  
+
     .imagenCinco {
       grid-area: imagenCinco;
     }
-  
+
     .imagenSeis {
       grid-area: imagenSeis;
     }
-  
+
     .imagenGaleria {
       width: 100%;
       height: 230px;
     }
-   
+
     .logo {
       margin-left: 4px;
       width: 40%;
@@ -293,13 +339,13 @@ $colorheader: #e7f045;
       letter-spacing: 2px;
       font-size: 25px;
        text-align: center;
-      
+
     }
-  
+
   h3{
     font-size: 20px;
   }
-  
+
     /* MEDIA DE CONTACTO max 599 */
     .formulario {
       width: 100%;
@@ -312,7 +358,7 @@ $colorheader: #e7f045;
     .tarjetaflex {
       flex-direction: column;
     }
-  
+
     /* VISTA TABLET */
     @media only screen and (min-width: 601px) and (max-width: 900px) {
       .gridPadre {
@@ -324,27 +370,27 @@ $colorheader: #e7f045;
           "imagenTres imagenCuatro"
           "imagenCinco imagenSeis";
       }
-  
+
       .imagenUno {
         grid-area: imagenUno;
       }
-  
+
       .imagenDos {
         grid-area: imagenDos;
       }
-  
+
       .imagenTres {
         grid-area: imagenTres;
       }
-  
+
       .imagenCuatro {
         grid-area: imagenCuatro;
       }
-  
+
       .imagenCinco {
         grid-area: imagenCinco;
       }
-  
+
       .imagenSeis {
         grid-area: imagenSeis;
       }
@@ -380,4 +426,3 @@ $colorheader: #e7f045;
       }
     }
   }
-  

@@ -347,6 +347,7 @@ textarea {
   margin-top: 6.5rem;
 }
 
+/* NAV BOOTSTRAP*/
 /*Cards*/
 .container-card {
   width: 100%;
@@ -571,6 +572,61 @@ h3 {
 .imagenEncabezadoOferta {
   width: 100%;
   margin-top: 6rem;
+}
+
+/* BARRA DE NAVECION DE OFERTAS*/
+.navOfertas {
+  background-color: #0769e9;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #034574;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* CARRUSEL DE IMAGENES */
