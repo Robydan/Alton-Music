@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* importando icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+
+@import "footer";
+
+/* VARIABLES */
+$colorheader: #e7f045;
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
+    background-color: $colorheader;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+  }
+  .botonera {
+    margin-right: 20px;
+  }
+  
+  .botonera ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .botonera ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #141514;
+  }
+  
+  .logo {
+    margin-left: 12px;
+    width: 17%;
+    margin-top: 3px;
+    margin-right: 3px;
+  }
+  h1 {
+    display: inline-block;
+    text-decoration: solid;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 50px;
+    margin-left: -12rem;
+    margin-right: 10rem;
+  }
+  
+  .btnInicio {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+  }
+  
+  a:hover,
+  a:focus {
+    background-size: 100% 2px;
+  }
+  h3 {
+    background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb);
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    /* inline-block afecta solo al titulo */
+    display: inline-block;
+    margin-right: 16%;
+    margin-top: 0.4%;
+  }
+  
+  /* SECCION SERVICIOS */
+  .contenedor {
+    text-align: center;
+    margin: 10px;
+    padding: 1em;
+    border: solid 1px #99a799;
+    border-radius: 4px;
+  }
+  
+  .contenedor h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .contenedor p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+  }
+  .tarjetaImgIndex {
+    width: 100%;
+  }
+  .imagenEncabezado {
+    width: 100%;
+  }
+  /* banner de ofertas */
+  .imagenEncabezadoOferta {
+    width: 100%;
+    margin-top: 6rem;
+  }
+  /* CARRUSEL DE IMAGENES */
+  .img-fluid{
+    margin-top: 6.5rem;
+
+  }
+  
+  /*SECCION GALERIA */
+  
+  .imagenGaleria {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .imagenGaleria:hover {
+    filter: grayscale(100%);
+    z-index: 5;
+  }
+  
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0.2em;
+    grid-row-gap: 0.2em;
+    grid-template-areas:
+      "imagenUno imagenDos imagenTres"
+      "imagenCuatro imagenCinco imagenSeis";
+  }
+  
+  .imagenUno {
+    grid-area: imagenUno;
+  }
+  
+  .imagenDos {
+    grid-area: imagenDos;
+  }
+  
+  .imagenTres {
+    grid-area: imagenTres;
+  }
+  
+  .imagenCuatro {
+    grid-area: imagenCuatro;
+  }
+  
+  .imagenCinco {
+    grid-area: imagenCinco;
+  }
+  
+  .imagenSeis {
+    grid-area: imagenSeis;
+  }
+  .imagenSiete {
+    grid-area: imagenSiete;
+  }
+  /* NAVEGACION DE MENU OFERTAS */
+  .NavOfertas {
+    background-color: #a8dadc;
+    width: 700px;
+    margin: 5px auto 9px;
+  }
+  
+  .NavOfertas ul li {
+    display: inline-block;
+    position: relative;
+  }
+  .NavOfertas ul li a {
+    color: black;
+    display: block;
+    padding: 10px 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .NavOfertas ul li a:hover {
+    background-color: #1d3557;
+    color: white;
+    text-decoration: underline;
+    transition: all 0.3s;
+  }
+  
+  /* GALERIA DE OFERTAS */
+  
+  
+  .tarjetaflex {
+    display: flex;
+    padding: 5px 5px;
+    /* margin-top: 1px; */
+    background-color: rgb(220, 160, 160);
+    width: 1300px;
+    flex-wrap: wrap;
+    margin: 4px auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenesDeOfertas{
+    width: 100%;
+  }
+  
+  .imagenEncabezadoOferta{
+    animation: movimiento 2.5s linear infinite;
+  }
+  .imagenesDeOfertas img {
+    margin-top: 1px;
+    width: 49%;
+    height: 200px;
+    transition: 0.5s filter;
+    border: 1px solid black;
+  }
+  .imagenesDeOfertas img:hover {
+    filter: brightness(0.6);
+  }
+  
+  /* SECCION CONTACTO */
+  #contacto {
+    background-size: 100vw 100vh;
+    background-image: url(../multimedia/fondo-de-contacto.jpg);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 9rem 9rem;
+    text-align: center;
+  }
+  
+  .formulario {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 1% 1%;
+    border: solid 1px #0e0e0e;
+    border-radius: 20px;
+    background-color: rgba(190, 232, 242, 0.6);
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  h2 {
+    background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb);
+    font-size: 3rem;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    /* inline-block afecta solo al titulo */
+    display: inline-block;
+  }
+  .campo {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+  }
+  textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 80%;
+  }
+  
+  .boton {
+    color: black;
+    background-color: #d3e4cd;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* ANIMACION EN CONTACTOs */
+  .burbuja {
+    border-radius: 50%;
+    background: #1b2e08;
+    opacity: 0.3;
+    position: absolute;
+    bottom: -150;
+    animation: burbujas 3s linear infinite;
+  }
+  .burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+  }
+  .burbuja:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+  }
+  .burbuja:nth-child(3) {
+    width: 75px;
+    height: 75px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+  }
+  .burbuja:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+  }
+  .burbuja:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+  .burbuja:nth-child(6) {
+    width: 79px;
+    height: 79px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+  }
+  .burbuja:nth-child(7) {
+    width: 49px;
+    height: 49px;
+    left: 43%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+  }
+  .burbuja:nth-child(8) {
+    width: 61px;
+    height: 61px;
+    left: 78%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+  }
+  .burbuja:nth-child(9) {
+    width: 38px;
+    height: 38px;
+    left: 69%;
+    animation-duration: 2s;
+    animation-delay: 4s;
+  }
+  .burbuja:nth-child(10) {
+    width: 51px;
+    height: 51px;
+    left: 47%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+  }
+  @keyframes burbujas {
+    0% {
+      bottom: 0;
+      opacity: 0;
+    }
+    30% {
+      transform: translateX(30px);
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      bottom: 100vh;
+      opacity: 0;
+    }
+  }
+  @keyframes movimiento{
+    /* moviento arriba y abajo */
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(15px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  
+  }
+  
+  
+  /* BOTON DE WHATSAPP */
+  
+  .botonWhatsApp img {
+    width: 70px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  /*VISTA MOVIL */
+  
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    .gridPadre {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas:
+        "imagenUno"
+        "imagenDos"
+        "imagenTres"
+        "imagenCuatro"
+        "imagenCinco"
+        "imagenSeis";
+    }
+  
+    .imagenUno {
+      grid-area: imagenUno;
+    }
+  
+    .imagenDos {
+      grid-area: imagenDos;
+    }
+  
+    .imagenTres {
+      grid-area: imagenTres;
+    }
+  
+    .imagenCuatro {
+      grid-area: imagenCuatro;
+    }
+  
+    .imagenCinco {
+      grid-area: imagenCinco;
+    }
+  
+    .imagenSeis {
+      grid-area: imagenSeis;
+    }
+  
+    .imagenGaleria {
+      width: 100%;
+      height: 230px;
+    }
+   
+    .logo {
+      margin-left: 4px;
+      width: 40%;
+      margin-top: 3px;
+      margin-right: 1px;
+    }
+    h1 {
+      letter-spacing: 2px;
+      font-size: 25px;
+       text-align: center;
+      
+    }
+  
+  h3{
+    font-size: 20px;
+  }
+  
+    /* MEDIA DE CONTACTO max 599 */
+    .formulario {
+      width: 100%;
+    }
+    #contacto {
+      background-image: none;
+      padding: auto;
+    }
+    /* MEDIA DE OFERTAS max 599 */
+    .tarjetaflex {
+      flex-direction: column;
+    }
+  
+    /* VISTA TABLET */
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+      .gridPadre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+          "imagenUno imagenDos"
+          "imagenTres imagenCuatro"
+          "imagenCinco imagenSeis";
+      }
+  
+      .imagenUno {
+        grid-area: imagenUno;
+      }
+  
+      .imagenDos {
+        grid-area: imagenDos;
+      }
+  
+      .imagenTres {
+        grid-area: imagenTres;
+      }
+  
+      .imagenCuatro {
+        grid-area: imagenCuatro;
+      }
+  
+      .imagenCinco {
+        grid-area: imagenCinco;
+      }
+  
+      .imagenSeis {
+        grid-area: imagenSeis;
+      }
+      header {
+        background-color: #834747;
+      }
+      .imagenGaleria {
+        width: 100%;
+        height: 150px;
+      }
+      .logo {
+        margin-left: 7px;
+        width: 36%;
+        margin-top: 2px;
+        margin-right: 2px;
+      }
+      h1 {
+        font-size: 35px;
+        margin-left: 2rem;
+        margin-right: 5rem;
+      }
+      h3{
+        font-size: 20px;
+      }
+      /* MEDIA DE CONTACTO */
+      .formulario {
+        width: 100%;
+      }
+      #contacto {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 6.5rem;
+      }
+    }
+  }
+  
