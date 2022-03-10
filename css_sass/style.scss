@@ -298,7 +298,10 @@ $colorheader: #e7f045;
     h1 {
       letter-spacing: 2px;
       font-size: 25px;
-       text-align: center;
+      text-align: center;
+      margin-left: 0px;
+      margin-right: 0px;
+
 
     }
 
@@ -317,6 +320,15 @@ $colorheader: #e7f045;
     /* MEDIA DE OFERTAS max 599 */
     .tarjetaflex {
       flex-direction: column;
+    }
+    .botonera{
+      margin-right: 8px;
+      width: 136px;
+    }
+    .card img{
+      width: 80%;
+      height: 250px;
+      max-width: 300px;
     }
 
     /* VISTA TABLET */
