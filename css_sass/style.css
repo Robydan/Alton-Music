@@ -91,7 +91,7 @@
   background-image: url(../multimedia/fondo-de-contacto.jpg);
   background-attachment: fixed;
   margin: 0;
-  padding: 9rem 9rem;
+  padding: 1px 1px;
   text-align: center;
 }
 
@@ -323,8 +323,15 @@ textarea {
   }
 }
 
-.container-fluid {
-  margin-top: 6rem;
+/* BARRA DE NAVECION DE OFERTAS*/
+.logoDeOferta {
+  width: 100px;
+  height: 100px;
+}
+
+.tituloDeOferta {
+  margin-left: 0px;
+  margin-right: 22px;
 }
 
 .bannerOferta {
@@ -340,14 +347,14 @@ textarea {
   background-color: #ddf7fc;
   width: 100%;
   height: 100%;
+  max-width: 1343px;
 }
 
 .bannerOferta img {
-  width: 80%;
-  margin-top: 6.5rem;
+  width: 100%;
+  margin-top: 4px 4px;
 }
 
-/* NAV BOOTSTRAP*/
 /*Cards*/
 .container-card {
   width: 100%;
@@ -440,6 +447,11 @@ h4 {
   .card {
     margin: 15px;
   }
+  .logoDeOferta {
+    width: 80px;
+    height: 80px;
+    margin-top: 0px;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) and (min-width: 768px) and (max-width: 1024px) {
@@ -449,7 +461,7 @@ h4 {
   }
 }
 
-/*Fin-Cards*/
+/*FIN DE CARD*/
 /* VARIABLES */
 * {
   margin: 0;
@@ -572,61 +584,6 @@ h3 {
 .imagenEncabezadoOferta {
   width: 100%;
   margin-top: 6rem;
-}
-
-/* BARRA DE NAVECION DE OFERTAS*/
-.navOfertas {
-  background-color: #0769e9;
-  height: 80px;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 992px;
-  margin: 0 auto;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 40px;
-  list-style: none;
-}
-
-.nav-menu-item {
-  font-size: 18px;
-  margin: 0 10px;
-  line-height: 80px;
-  text-transform: uppercase;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.nav-menu-link {
-  padding: 8px 12px;
-  border-radius: 3px;
-}
-
-.nav-menu-link:hover,
-.nav-menu-link_active {
-  background-color: #034574;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 /* CARRUSEL DE IMAGENES */
@@ -833,6 +790,8 @@ h3 {
     letter-spacing: 2px;
     font-size: 25px;
     text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   h3 {
     font-size: 20px;
@@ -851,6 +810,15 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .botonera {
+    margin-right: 8px;
+    width: 136px;
+  }
+  .card img {
+    width: 80%;
+    height: 250px;
+    max-width: 300px;
   }
   /* VISTA TABLET */
 }
