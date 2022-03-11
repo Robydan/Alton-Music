@@ -7,19 +7,27 @@
   margin-left: 0px;
   margin-right: 22px;
 }
-
+.nav-link {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
 .bannerOferta {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ddf7fc;
-  width: 100%;
-  height: 100%;
+  width: 1341px;
+  height: 533px;
   max-width: 1343px;
 }
 .bannerOferta img {
-  width: 80%;
-  margin-top: 4px 4px;
+  width: 1300px;
+  margin-top: 46px;
+  height: 336px;
 }
 
 /*Cards*/
@@ -105,27 +113,4 @@ h4 {
   background: #2fb4cc;
   color: #fff;
 }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .container-card {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .card {
-    margin: 15px;
-  }
-  .logoDeOferta {
-    width: 80px;
-    height: 80px;
-    margin-top: 0px;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 768px) and (min-width: 768px) and (max-width: 1024px) {
-  img {
-    width: 90%;
-    height: 200px;
-  }
-} /*FIN DE CARD*/
-
 
