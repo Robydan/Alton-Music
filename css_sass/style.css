@@ -522,6 +522,19 @@ h4 {
   }
 }
 
+.sinInterImagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1024px;
+}
+
+.sinInterImagen img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* VARIABLES */
 * {
   margin: 0;
